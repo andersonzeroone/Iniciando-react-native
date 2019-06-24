@@ -8,8 +8,13 @@ import Contador from './componentes/Contador'
 import ValidarProps from './componentes/validarProps'
 import Evento from  './componentes/Evento'
 import { Avo } from './componentes/ComunicacaoDireta'  //O Avo ficou entre {} pq foi exportado direto no componente não usou o default
+import TextoSincronizado from './componentes/ComunicacaoIndireta';
 
 export default createDrawerNavigator({
+    TextoSincronizado: {
+        screen: TextoSincronizado,
+        navigationOptions: {title: 'Texto Sicronizado'}
+    },
     Avo: {
         screen: () => <Avo nome='Jose' sobrenome='Silva' />
     },
