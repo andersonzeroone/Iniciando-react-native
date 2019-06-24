@@ -5,8 +5,12 @@ import Simples from './componentes/simples'
 import ParImpar from './componentes/ParImpar'
 import {Inverter, MegaSena} from './componentes/Milti'
 import Contador from './componentes/Contador'
+import ValidarProps from './componentes/validarProps'
 
 export default createDrawerNavigator({
+    ValidarProps: {
+        screen: () => <ValidarProps ano={18} />
+    },
     Contador:{
         screen : () => <Contador />
     },
