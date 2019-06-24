@@ -10,9 +10,13 @@ import Evento from  './componentes/Evento'
 import { Avo } from './componentes/ComunicacaoDireta'  //O Avo ficou entre {} pq foi exportado direto no componente não usou o default
 import TextoSincronizado from './componentes/ComunicacaoIndireta'
 import ListaFlex from './componentes/ListaFlex'
+import Flex from './componentes/Flex'
 
 
 export default createDrawerNavigator({
+    Flex:{
+        screen: Flex
+    },
     ListaFlex: {
         screen: ListaFlex,
         navigationOptions:{ title: 'lista Flex'}
